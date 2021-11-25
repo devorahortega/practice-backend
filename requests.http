@@ -1,0 +1,23 @@
+### Creates New User
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "first_name": "Ash",
+  "last_name": "Janus",
+  "age": 13,
+  "email": "ashjanus@example.com",
+  "address": "576 Streetname, State",
+  "phone": "123-343-1235"
+}
+
+### Updates User
+PATCH http://localhost:3000/users/6.json
+Content-Type: application/json
+
+{
+  "first_name": "Mark"
+}
+
+### Deletes User
+DELETE http://localhost:3000/users/6.json
